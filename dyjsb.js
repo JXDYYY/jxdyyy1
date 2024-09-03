@@ -23,7 +23,7 @@ function requestAndCaptureScreen() {
 
 
 function douyin() { //主函数
-    while (true) {
+    while (shouldRun) {
         toastLog('清理后台');
         clean_background();
         sleep(2000);
