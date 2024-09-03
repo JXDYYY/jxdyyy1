@@ -3,8 +3,11 @@ let ocr = $ocr.create();
 
 douyin()
 
-
-
+function stop() {
+    threads.shutDownAll();
+    console.log("脚本停止运行");
+    exit();
+}
 // 请求和捕获屏幕截图
 function requestAndCaptureScreen() {
     sleep(500); // 等待屏幕内容更新
